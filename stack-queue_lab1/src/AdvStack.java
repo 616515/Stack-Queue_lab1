@@ -1,8 +1,12 @@
 public class AdvStack {
-    public AdvStack(int size){
-        super(size);
+    public int peak()
+    {
+        return 0;
     }
-    public int peak(){
-        return list[top];
+    public void search(int x){
+
+    }
+    public void clear(){
+
     }
 }
