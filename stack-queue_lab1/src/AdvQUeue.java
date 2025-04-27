@@ -5,4 +5,10 @@ public class AdvQUeue {
     public void clear(){
 
     }
+    public int deQueue(){
+        return 0;
+    }
+    public boolean enQueue(){
+        return false;
+    }
 }

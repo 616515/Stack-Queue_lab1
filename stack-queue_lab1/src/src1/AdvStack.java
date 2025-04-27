@@ -8,7 +8,7 @@ public class AdvStack extends MyStack {
 
     public int peak() {
         if (isEmpty()) {
-            System.out.println("Warning: Stack is empty. Cannot peak.");
+            System.out.println("stack empty");
             return -1;
         }
         return list[top];
@@ -16,11 +16,9 @@ public class AdvStack extends MyStack {
 
     public String search(int x) {
         for (int i = 0; i <= top; i++) {
-            if (list[i] == x) {
-                return "TRUE";
-            }
+            if (list[i] == x) return "true";
         }
-        return "FALSE";
+        return "false";
     }
 
     public void clear() {
@@ -32,7 +30,7 @@ public class AdvStack extends MyStack {
             pop();
             pop();
         } else {
-            System.out.println("Warning: Not enough elements for double pop.");
+            System.out.println("stack not enough");
         }
     }
 

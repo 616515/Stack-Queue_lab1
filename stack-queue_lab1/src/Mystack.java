@@ -15,6 +15,6 @@ public class Mystack {
         int x = list[top];
         list[top] = 0;
         top = top-1;
-        return x;
+            return x;
     }
 }

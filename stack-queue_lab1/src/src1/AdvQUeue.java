@@ -7,11 +7,11 @@ public class AdvQUeue extends Queue {
     }
 
     public String search(int x) {
-        if (isEmpty()) return "FALSE";
+        if (isEmpty()) return "false";
         for (int i = front; i <= rear; i++) {
-            if (list[i] == x) return "TRUE";
+            if (list[i] == x) return "true";
         }
-        return "FALSE";
+        return "false";
     }
 
     public void clear() {
@@ -29,7 +29,7 @@ public class AdvQUeue extends Queue {
 
     public int getFront() {
         if (isEmpty()) {
-            System.out.println("Warning: Queue is empty. No front element.");
+            System.out.println("front > rear");
             return -1;
         }
         return list[front];
@@ -37,7 +37,7 @@ public class AdvQUeue extends Queue {
 
     public int getRear() {
         if (isEmpty()) {
-            System.out.println("Warning: Queue is empty. No rear element.");
+            System.out.println("front > rear");
             return -1;
         }
         return list[rear];
