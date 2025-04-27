@@ -6,6 +6,10 @@ public class AdvStack extends MyStack {
         super(size);
     }
 
+    private int availableSpace() {
+        return capacity - (top + 1);
+    }
+
     public int peak() {
         if (isEmpty()) {
             System.out.println("stack empty");
@@ -35,7 +39,11 @@ public class AdvStack extends MyStack {
     }
 
     public void doublePush(int x, int y) {
-        push(x);
-        push(y);
+        if (availableSpace() >= 2) {
+            push(x);
+            push(y);
+        } else {
+            System.out.println("stack not enough");
+        }
     }
 }
